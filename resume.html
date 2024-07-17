@@ -12,7 +12,21 @@
 
 
     <link rel="stylesheet" href="css/ctyles.css">
-    
+    <script>
+      var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+      if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+      function mischandler(){
+      return false;
+      }
+      function mousehandler(e){
+      var myevent = (isNS) ? e : event;
+      var eventbutton = (isNS) ? myevent.which : myevent.button;
+      if((eventbutton==2)||(eventbutton==3)) return false;
+      }
+      document.oncontextmenu = mischandler;
+      document.onmousedown = mousehandler;
+      document.onmouseup = mousehandler;
+      </script>
 </head>
 <body>
   
@@ -172,8 +186,8 @@
   <!-- 2.2 My contacts -->
   <div class="contaccts-container">
   <h3 class="contacts-title">Contacts</h3>
-  <p class="contacts-item"><span class="contacts-type">E:</span> <a class="contacts-link" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=ponomarenko.daria2020@gmail.com">ponomarenko.daria2020@gmail.com</a></p>
-  <p class="contacts-item"><span class="contacts-type">M:</span><a class="contacts-link" href="https://linktr.ee/ponomarenko_daria_art">My media</a></p>
+  <p class="contacts-item"><span class="contacts-type">E:</span> <a class="contacts-link" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=ponomarenko.daria2020@gmail.com"target="_blank">ponomarenko.daria2020@gmail.com</a></p>
+  <p class="contacts-item"><span class="contacts-type">M:</span><a class="contacts-link" href="https://linktr.ee/ponomarenko_daria_art"target="_blank">My media</a></p>
   </div>
   <!-- 2.3 Tech Skills -->
       <div class="skills-container"> 

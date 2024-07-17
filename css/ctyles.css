@@ -319,7 +319,7 @@ body {background: #ffffff;
     position: relative;
     line-height: 13px;
     font-size: 13px;
-    transition: font-size ease-in-out 130ms;
+    transition: ease-in-out 130ms;
     list-style-type: none;
 }
 
@@ -386,11 +386,12 @@ body {background: #ffffff;
     width: 80%;
     margin: 100px auto 50px;
     display: grid;  
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     /* grid-gap: 30px; */
     position: relative;
     margin-top: 55px;
-    margin-bottom: 40px;
+    margin-bottom: 40px;    
+    
 }
 .image-gallery img{ 
     width: 100%;
@@ -528,3 +529,93 @@ body {background: #ffffff;
     
 }
 
+/* @media only screen and (max-width: 600px) and (orientation:landscape){
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+}
+@media only screen and (max-width: 600px) and (orientation:portrait){
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+}
+@media only screen and (min-width: 601px) and (orientation:landscape){
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+}
+@media only screen and (min-width: 601px) and (orientation:portrait){
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+}
+@media only screen and (min-width: 768px) and (orientation:landscape){
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+}
+@media only screen and (min-width: 768px) and (orientation:portrait){
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+}
+@media only screen and (min-width: 992px) (orientation:landscape){
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+}
+@media only screen and (min-width: 992px) (orientation:portrait) {
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+}
+@media only screen and (min-width: 1200px) (orientation:landscape){
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+}
+@media only screen and (min-width: 1200px) (orientation:portrait){
+
+    .wrapper {
+        background-color: #fafeff;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        margin: 0 auto;}
+} */
