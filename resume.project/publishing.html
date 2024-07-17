@@ -12,7 +12,21 @@
 
 
     <link rel="stylesheet" href="css/ctyles.css">
-    
+    <script>
+      var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+      if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+      function mischandler(){
+      return false;
+      }
+      function mousehandler(e){
+      var myevent = (isNS) ? e : event;
+      var eventbutton = (isNS) ? myevent.which : myevent.button;
+      if((eventbutton==2)||(eventbutton==3)) return false;
+      }
+      document.oncontextmenu = mischandler;
+      document.onmousedown = mousehandler;
+      document.onmouseup = mousehandler;
+      </script>
 </head>
 <body>
   
@@ -70,9 +84,13 @@
 <!-- MENU HEADER LINKS --><!-- MENU HEADER LINKS --><!-- MENU HEADER LINKS -->
 <div class="PUBLISHING">
     <p class="my-descr-publishing">I was fortunate enough to be the illustrator 
-      for several children's affirmation books for <a href="https://www.linkedin.com/in/frank-clark-md-dfapa-acpsych-18221226/" class="names">Frank Clark, MD, DFAPA, ACPsych, </a>
-      his family, and thousands of children around the world! Together with <a href="https://www.linkedin.com/in/frank-clark-md-dfapa-acpsych-18221226/" class="names">Frank Clark, MD, DFAPA, ACPsych, </a>, 
-      <a href="https://www.linkedin.com/in/nan-avant-award-winning-composer-19b5451/recent-activity/all/" class="names">Nan Avant - Award Winning Composer,</a> and <a href="https://www.linkedin.com/in/danielbrantley/" class="names">Daniel Brantley at Argyle Fox,</a> 
+      for several children's affirmation books for <a href="https://www.linkedin.com/in/frank-clark-md-dfapa-acpsych-18221226/" 
+      class="names" target="_blank">Frank Clark, MD, DFAPA, ACPsych, </a>
+      his family, and thousands of children around the world! Together with <a href="https://www.linkedin.com/in/frank-clark-md-dfapa-acpsych-18221226/" 
+      class="names"  target="_blank">Frank Clark, MD, DFAPA, ACPsych, </a>, 
+      <a href="https://www.linkedin.com/in/nan-avant-award-winning-composer-19b5451/recent-activity/all/" 
+      class="names"  target="_blank">Nan Avant - Award Winning Composer,</a> and <a href="https://www.linkedin.com/in/danielbrantley/" 
+      class="names"  target="_blank" >Daniel Brantley at Argyle Fox,</a> 
       these books are now available for purchase. 
 
     </p>    

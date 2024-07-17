@@ -11,12 +11,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/ctyles.css">
-    
+    <script>
+      var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+      if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+      function mischandler(){
+      return false;
+      }
+      function mousehandler(e){
+      var myevent = (isNS) ? e : event;
+      var eventbutton = (isNS) ? myevent.which : myevent.button;
+      if((eventbutton==2)||(eventbutton==3)) return false;
+      }
+      document.oncontextmenu = mischandler;
+      document.onmousedown = mousehandler;
+      document.onmouseup = mousehandler;
+      </script>
 </head>
 <body>
-  
-<!-- SUKAJEBANAKURWA --><!-- SUKAJEBANAKURWA --><!-- SUKAJEBANAKURWA --><!-- SUKAJEBANAKURWA -->
+
+ 
+
 <header class="header-right-aligned">
   <div class="container-header">
 <!-- PICTURE LOGO --><!-- PICTURE LOGO --><!-- PICTURE LOGO --><!-- PICTURE LOGO -->
@@ -84,36 +102,36 @@
 
 </div> 
   <div class="image-gallery">
-    <img src="img/1.png" onclick="openFullImg(this.src)">
-    <img src="img/6.png" onclick="openFullImg(this.src)">
-    <img src="img/7.png" onclick="openFullImg(this.src)">
-    <img src="img/8.png" onclick="openFullImg(this.src)">
-    <img src="img/2.png" onclick="openFullImg(this.src)">
-    <img src="img/3.png" onclick="openFullImg(this.src)">
-    <img src="img/4.png" onclick="openFullImg(this.src)">
-    <img src="img/5.png" onclick="openFullImg(this.src)">
-    <img src="img/9.png" onclick="openFullImg(this.src)">
-    <img src="img/10.png" onclick="openFullImg(this.src)">
-    <img src="img/11.png" onclick="openFullImg(this.src)">
-    <img src="img/12.png" onclick="openFullImg(this.src)">
-    <img src="img/13.png" onclick="openFullImg(this.src)">
-    <img src="img/14.png" onclick="openFullImg(this.src)">
+    <img src="img/1 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)", onMouseDown="popupMsg('This image is Copyrighted -- Computer Hope 2007')">
+    <img src="img/6 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/7 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/8 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/5 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/2 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/3 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/4 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/9 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/10 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/11 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/12 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/13 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+    <img src="img/14 This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
   </div>
 
 </div> 
 <div class="children-books">Children books</div>
 <div class="image-gallery">
 
-  <img src="img/1 illustration.jpg.png" onclick="openFullImg(this.src)">
-  <img src="img/2 illustration.jpg.png" onclick="openFullImg(this.src)">
-  <img src="img/3 illustration.jpg.png" onclick="openFullImg(this.src)">
-  <img src="img/4 illustration.jpg.png" onclick="openFullImg(this.src)">
-  <img src="img/5 illustration.jpg.png" onclick="openFullImg(this.src)">
-  <img src="img/6 illustration.jpg.png" onclick="openFullImg(this.src)">
-  <img src="img/7 illustration.jpg.png" onclick="openFullImg(this.src)">
-  <img src="img/8 illustration.jpg.png" onclick="openFullImg(this.src)">
-  <img src="img/9 illustration.jpg.png" onclick="openFullImg(this.src)">
-  <img src="img/10 illustration.jpg.png" onclick="openFullImg(this.src)">
+  <img src="img/1 illustration.jpg This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+  <img src="img/2 illustration.jpgThis photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+  <img src="img/3 illustration.jpg This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+  <img src="img/4 illustration.jpgThis photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+  <img src="img/5 illustration.jpgThis photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+  <img src="img/6 illustration.jpgThis photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+  <img src="img/7 illustration.jpgThis photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+  <img src="img/8 illustration.jpgThis photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+  <img src="img/9 illustration.jpgThis photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
+  <img src="img/10 illustration.jpg This photo is Copyright © 2021 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
 </div>
 <div>
    
@@ -134,9 +152,13 @@
     fullImgBox.style.display = "flex";
     fullImg.src = pic;
   }
-    function closeFullImg(){
+  function closeFullImg(){
       fullImgBox.style.display = "none";
+      
     }
+//   function popupMsg(theMsg) {
+//   alert(theMsg);
+// }
 
 
 
@@ -144,6 +166,7 @@
 
 
 </script>
+
 <!-- imagegallery --><!-- imagegallery --><!-- imagegallery --><!-- imagegallery --><!-- imagegallery -->
 
 
