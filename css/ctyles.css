@@ -499,6 +499,13 @@ body {background: #ffffff;
    
 }
 
+.copyright { 
+    text-align-last: center;
+    font-size: 10px;
+    font-weight: 100;}
+   
+
+
 .dot-for-bottom-elements{ 
     
     text-align-last: center;
