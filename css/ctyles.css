@@ -1,0 +1,877 @@
+* {
+    margin: 0; /* Скидає зовнішні відступи */
+    padding: 0; /* Скидає внутрішні відступи */
+    box-sizing: border-box; /* Упевнює, що padding та border входять у загальну ширину та висоту */
+}
+body {background: #ffffff;
+    /* padding: 40px 0px 40px 0px; */
+    font-family: "Montserrat", sans-serif;
+    
+}
+    ul,ol { 
+        margin-top: 0;
+        margin-bottom: 0;}
+
+.wrapper {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-right: 100px;
+   
+  
+}
+/* main content */
+.main-content {
+   background: linear-gradient(to top, #f8fdff, #f1fbff);
+    padding-left: 80px;
+    padding-top: 80px;
+    padding-right: 65px;    
+    padding-bottom: 80px;
+    box-sizing: border-box;
+    width:100%
+    
+}
+.project-item {
+    font-size: 66;}
+/* sidebar */
+.sidebar{
+    background: #daf3ff;
+    background: linear-gradient(to top, #f3fbff, #daf3ff);
+    padding-top: 40px;  
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    width: 370px;
+    margin-left: 100px;
+    
+
+}
+.sidebar-content {
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.contacts-title {
+    color: #161D2A;
+    font-size: 22px;
+    font-weight: 700px;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 8px;}
+/* Contacts */
+.contacts-type {
+    color: #161d2a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 8px;}
+.contacts-link {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    
+    text-decoration: none;}
+
+
+.contacts-link:hover{ 
+    color: #ff7e7e;}
+    .contacts-link:active{ 
+    color: #faa844;}
+
+
+
+.contacts-item {
+    margin-top: 0;
+    margin-bottom: 3px;}
+.contaccts-container {
+    margin-bottom: 40px;}
+/* Skills-container */
+.skills-container {
+    margin-bottom: 40px;}
+/* Skills-container soft skills */
+.skills-container-soft-skiills {
+    margin-bottom: 40px;}
+.skills-title {
+    color: #161d2a;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 8px;
+
+}
+.skills-title { /* Змінив .Feedback-text на .feedback-text */
+    color: #ff7e7e;
+}
+
+.skills-title:active { /* Змінив .Feedback-text на .feedback-text */
+    color: #faa844;
+}
+.skills-title-soft-skills {
+    color: #161d2a;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+
+.skills-title-soft-skills:hover { /* Змінив .Feedback-text на .feedback-text */
+    color: #faa844;
+}
+
+
+
+
+.skills-list { 
+    padding-left: 16px;}
+.skills-list-soft-skills {
+    padding-left: 16px;
+    line-height: 24px;}
+.skillls-list-item { 
+    color: #161d2a;
+    font-size: 14px;
+    /* font-weight: 400; */
+    line-height: 24px;}
+.my-projects-item-link { 
+    color: #62c2ee;
+    /* font-size: 14px; */
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;}
+/* main conent styles */
+.my-profession { 
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+
+
+.my-profession:hover { /* Змінив .Feedback-text на .feedback-text */
+    color: #faa844;
+}
+.my-name { 
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-top: 0;
+    margin-bottom: 12px;}
+
+    .my-name:hover { /* Змінив .Feedback-text на .feedback-text */
+        color:  #faa844;
+    }
+    
+
+.my-descr { 
+    color: #595959;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 60px;}
+
+
+.my-descr-publishing{ 
+
+    color: #595959;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    text-align-last: center;
+  
+}
+.my-info { 
+    margin-bottom: 40px;}
+/* my-projects-title */
+.my-projects-title { 
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 8px;}
+.my-projects-title:hover { /* Змінив .Feedback-text на .feedback-text */
+        color:  #faa844;
+    }
+    
+
+.my-projects-list { 
+    padding-left: 16px;}
+.my-project-item { 
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;}
+.my-projects-item-link { 
+    color: #62c2ee;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;}
+.my-projects-item-link:hover{ 
+    color: #ff7e7e;
+}
+.my-projects-item-link:active{ 
+    color: #faa844;
+}
+
+.my-projects-item-tech { 
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;}
+.my-projects-container {
+    margin-bottom: 40px;}
+/* Work Experience */
+.work-experience-title { 
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 8px;}
+.work-experience-title:hover{
+    color: #faa844;
+}
+
+
+
+.work-experience-company { 
+    color:#000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;}
+
+.work-experience-company:hover { /* Змінив .Feedback-text на .feedback-text */
+        color:  #faa844;
+    }
+.company-name { 
+    color:#62c2ee ;}
+.work-experience-perdiod {
+    color:#a8a8a8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-bottom: 10px;
+
+}
+.work-experience-separator { 
+    color:#000;}
+.work-experience-duties-list { 
+    padding-left: 16px;}
+.work-experience-item { 
+    color:#595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.education-experience-item { 
+    color:#595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+.contacts-item-new{ 
+    color:#000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+.work-experience-container { 
+    margin-bottom: 12px;}
+
+.education-item { 
+    color:#595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0px;
+    margin-bottom: 8px;
+}
+
+.speciality { 
+    color:#595959;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 16px;
+    margin-bottom: 0px;}
+
+.work-experience-section { 
+    margin-bottom: 40px;
+}
+
+.education-title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 8px;}
+.education-title:hover{
+    color: #faa844;
+}
+.university { 
+    color:#62c2ee;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;}
+.education-faculty { 
+    color:#62c2ee;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.education-period { 
+    color:#a8a8a8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+.bold-text {
+    color: #161d2a;
+    font-size: 14px;
+    font-weight: 700;}
+
+
+/* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO *//* PORTFOLIO */
+.header-right-aligned { 
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+    display: block;
+    box-sizing: inherit;
+    unicode-bidi: isolate;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container-header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: inherit;
+    unicode-bidi: isolate;
+    
+
+    
+
+    
+}
+.menu-social-group{ 
+
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.default-menu  { 
+
+
+    opacity: 1 !important;
+}
+.menu{ 
+    margin-bottom: 0;
+    text-align: center;
+
+}
+.menu-list { 
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.links { 
+    margin: 8px 0;
+    padding: 0 30px 0 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    line-height: 13px;
+    font-size: 13px;
+    transition: ease-in-out 130ms;
+    list-style-type: none;
+}
+
+.style-of-the-links { 
+    
+    text-decoration: none;
+    /*color:inherit;*/
+    color: #4c4a6f;
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    background-color: transparent;
+
+}
+.style-of-the-links:hover{
+    color: #ff7e7e;
+}
+.style-of-the-links:active{
+    color: #62c2ee;
+}
+
+
+
+.image-dot { 
+    content: '';
+    position: absolute;
+    top: 49%;
+    left: -7px;
+    margin-top: -2px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #62c2ee;
+
+}
+
+
+
+
+
+
+.social { 
+
+    text-align: right;
+    margin: 8px 0 0;
+    
+}
+.unstyled { 
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social-item { 
+    display: inline-block;
+    margin: 0px 9px;
+    width: 16px;
+}
+
+.image-gallery { 
+
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-gap: 30px; */
+    position: relative;
+    margin-top: 55px;
+    margin-bottom: 40px;    
+    
+}
+.image-gallery img{ 
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.image-gallery img:hover{
+    display: inline-block;
+    transform: scale(0.98);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2)
+}
+.full-image { 
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+
+}
+
+.full-image img{
+    width: 90%;
+    max-width: 600px;
+    max-height: auto;
+    
+}
+.full-image span{ 
+
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.cancel-button { 
+
+    width: 100;
+    
+}
+.names { 
+    color: #62c2ee;
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 24px;
+    text-decoration: underline;
+    text-decoration: none;}
+
+
+
+.names:hover{ 
+    color: #ff7e7e;}
+.names:active{
+    color: #faa844;}
+
+
+.button-go-to-children-books:hover{ 
+    color: #ff7e7e;
+}
+.button-go-to-children-books:active{
+    color: #faa844;
+}
+
+.names-of-the-books { 
+    color: #595959;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 90px;
+    margin-left: 70px;
+    margin-top: 30px;
+    
+}
+.children-books{ 
+
+    color: #62c2ee;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align-last: center;
+
+
+}
+.button-go-to-children-books{ 
+    
+    text-align-last: center;
+    
+    color: #62c2ee;
+    font-size: 22px;
+    font-weight: 700;
+    
+    cursor: pointer;
+    outline: 0;
+    text-decoration:#62c2ee;
+   
+}
+
+.copyright { 
+    text-align-last: center;
+    font-size: 10px;
+    font-weight: 100;}
+   
+
+
+
+
+
+.social-media { 
+
+    /* text-align-last: center; */
+   
+    color: #62c2ee;
+    font-size: 22px;
+    font-weight: 700;
+    align-items: row;
+    align-content: row;
+    cursor: pointer;
+    outline: 0;
+    text-decoration:#62c2ee;
+    
+}
+
+
+
+.feedback {
+    text-align: center; /* Центрує заголовок */
+    margin: 0; /* Відступи зверху та знизу */
+    background-color:#ffffff;
+    
+    /* background: linear-gradient(to bottom, #ffffff 0%, #ffffff 10% ,#faa844 100% ); */
+    padding: 40px; /* Додатковий внутрішній відступ для секції */
+}
+
+.feedback-container {
+   
+    display: grid; /* Використовуємо Grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Автоматично створює стовпчики */
+    gap: 20px; /* Відстань між картками */
+    justify-content: center; /* Центрує елементи в контейнері */
+    margin: 0 auto; /* Центрує контейнер по горизонталі */
+    max-width: 1600px; /* Додайте максимальну ширину */
+    margin-bottom: 50px;
+}
+
+.feedback-item {
+    background: #ffffff; /* Білий фон для картки */
+    border-radius: 8px;
+    padding: 20px;
+    /* Тіні, виразніші зверху */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 
+                0px -3px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+blockquote {
+    flex-grow: 1; /* Дозволяє блоку з текстом займати залишковий простір */
+    margin: 0; /* Скидає відступи, щоб текст був ближче до зірок */
+    text-align: center; /* Центрує текст */
+   color: #595959;
+    font-style: italic; /* Можливо, ви хочете, щоб текст виглядав як цитата */
+}
+.stars {
+    margin-bottom: 10px; /* Відступ між зірками та текстом */
+    font-size: 20px; /* Розмір зірок (можете змінити за потреби) */
+    text-align: center; /* Центрує зірки */
+    align-self: center;
+    
+}
+
+.feedback-text { /* Змінив .Feedback-text на .feedback-text */
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-top: 100px;
+    
+    text-align-last: center;
+    margin-bottom: 13px;  
+    
+
+    
+}
+.resume-text {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-top: 85px;
+    
+    text-align-last: center;
+     
+}
+.TESTIMONIALS { /* Змінив .Feedback-text на .feedback-text */
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-top: 85px;
+    
+    text-align-last: center;
+    margin-bottom: 13px;  
+    
+
+    
+}
+.feedback-description {
+    font-size: 14px; /* Розмір шрифту */
+    color: #555; /* Колір тексту */
+    margin-bottom: 40px; /* Відступ знизу */
+    text-align: center; /* Центрує текст */
+    font-style: italic; /* Можливо, ви хочете, щоб текст виглядав як цитата */
+    
+    /* font-size: 14px; */
+    
+    line-height: 24px;
+    text-decoration: none;
+}
+
+
+.feedback-text:hover { /* Змінив .Feedback-text на .feedback-text */
+    color: #faa844;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer { 
+    background-color:#62c2ee;
+    color: #fafeff;
+    padding-top: 5px;
+    padding-bottom: 45px;
+    
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    
+}
+.footer-logo { 
+    margin-bottom: 5px;
+    /* margin-top: 5px; */
+
+}
+.logo-icon { 
+    width: 80px;
+    height: 80px;
+   
+}
+
+.footer-nav { 
+margin-bottom: 15px;
+
+}
+.footer-nav a{ 
+    color: #fafeff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    }
+.footer-nav a:hover { 
+
+    color:#000;
+}
+.copyright {    
+    font-weight: 400px;
+    font-size: 12px;
+    color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 350;
+    
+}
+
+
+
+
+
+
+
+
+
+.gallery {
+    text-align: center;
+    margin: 40px 0;
+    
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.category {
+    text-align: center;
+    width: 435px; /* Задає ширину для кожної категорії */
+    
+}
+
+.category img {
+    width: 100%; /* Робить зображення адаптивними */
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition:transform 0.2s;
+}   
+
+.category img:hover {
+    transform: scale(1.05); /* Збільшує зображення при наведенні */
+}
+
+.category h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.illustration-section {
+    margin: 40px 0;
+    
+}
+
+.illustration-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.illustration-container img {
+    max-width: 150px; /* Задай максимальну ширину для ескізів */
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.illustration-container img:hover {
+    transform: scale(1.05); /* Збільшує зображення при наведенні */
+}
+
