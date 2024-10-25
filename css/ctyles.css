@@ -371,8 +371,8 @@ body {background: #ffffff;
     padding-top: 10px;
     padding-bottom: 5px;
     margin-top: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .container-header { 
@@ -824,8 +824,8 @@ margin-bottom: 15px;
     text-decoration: none;
     margin-top: 80px;
     margin-bottom: 80px;
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .category {
