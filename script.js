@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // script.js
 
 function openImage(src) {
@@ -19,4 +20,27 @@ window.onclick = function(event) {
     if (event.target === modal) {
         closeModal();
     }
+=======
+// script.js
+
+function openImage(src) {
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modalImage");
+
+    modal.style.display = "flex"; // Показати модальне вікно
+    modalImage.src = src; // Встановити зображення в модальному вікні
+}
+
+function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none"; // Сховати модальне вікно
+}
+
+// Закриття модального вікна при натисканні поза зображенням
+window.onclick = function(event) {
+    const modal = document.getElementById("modal");
+    if (event.target === modal) {
+        closeModal();
+    }
+>>>>>>> 1a1342346bae5baa74c755b8dc24eaef8adfd40b
 }
