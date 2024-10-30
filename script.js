@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // script.js
 
 function openImage(src) {
@@ -20,7 +20,6 @@ window.onclick = function(event) {
     if (event.target === modal) {
         closeModal();
     }
-=======
 // script.js
 
 function openImage(src) {
@@ -42,5 +41,5 @@ window.onclick = function(event) {
     if (event.target === modal) {
         closeModal();
     }
->>>>>>> 1a1342346bae5baa74c755b8dc24eaef8adfd40b
+
 }
