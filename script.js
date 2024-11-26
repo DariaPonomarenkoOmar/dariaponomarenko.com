@@ -15,7 +15,7 @@ function closeModal() {
 }
 
 // Закриття модального вікна при натисканні поза зображенням
-window.onclick = function(event) {
+window.onclick = function(event) 
     const modal = document.getElementById("modal");
     if (event.target === modal) {
         closeModal();
