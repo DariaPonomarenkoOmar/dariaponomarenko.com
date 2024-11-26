@@ -1796,3 +1796,26 @@ margin-bottom: 15px;
     background-color: #c8edff;
     
 }
+
+
+
+
+.download-button{
+    color: #000;
+    display: inline-block;
+    padding: 10px 20px
+    color:#000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 17px;
+    text-decoration: none;
+    
+}
+
+
+
+.download-button:hover { /* Змінив .Feedback-text на .feedback-text */
+    color:  #ff7e7e;
+}
