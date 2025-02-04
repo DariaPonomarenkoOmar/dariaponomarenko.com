@@ -1709,20 +1709,16 @@ margin-bottom: 15px;
 
 .categories {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий ряд */
+    justify-content: center; /* Центрує елементи */
     gap: 20px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 80px 50px;
 }
 
 .category {
+    width: calc(33.333% - 20px); /* Три елементи в рядок, з урахуванням відступів */
+    max-width: 435px; /* Щоб не розтягувалося надто широко */
     text-align: center;
-    width: 435px; /* Задає ширину для кожної категорії */
-    
 }
 
 .category img {
@@ -1779,10 +1775,10 @@ margin-bottom: 15px;
 .back-button {
     position: absolute; /* Абсолютне позиціонування */
     left: 65px; /* Розташовуємо її зліва */
-    top: 39.8%; /* Вирівнюємо по вертикалі */
+    top: 37%; /* Вирівнюємо по вертикалі */
     transform: translateY(-50%); /* Центруємо по висоті */
     padding: 10px 20px;
-    
+
     background-color:#e7f7ff;
     color: #333;
     font-size: 16px;
@@ -1804,7 +1800,7 @@ margin-bottom: 15px;
     color: #000;
     display: inline-block;
     padding: 10px 20px
-    color:#000;
+    
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -1819,3 +1815,65 @@ margin-bottom: 15px;
 .download-button:hover { /* Змінив .Feedback-text на .feedback-text */
     color:  #ff7e7e;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 80vh;
+    margin-top: 5%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: black;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+</style>
+
+.simple-gallery { 
+    max-width: 200px; /* Максимальна ширина контейнера */
+    margin: 100px auto 50px; /* Центруємо контейнер */
+    display: flex; /* Використовуємо flexbox */
+    justify-content: center; /* Центруємо картинку по горизонталі */
+    align-items: center; /* Центруємо по вертикалі (якщо знадобиться) */
+   
+}
+
+.simple-gallery img { 
+    width: 70%; /* Картинка заповнює контейнер */
+    height: auto; /* Зберігає пропорції */
+    display: block; /* Прибирає зайві відступи */
+    margin-left: 175px; 
+    margin-top: 30.50px;
+    margin-bottom: 70px;
+}
+
