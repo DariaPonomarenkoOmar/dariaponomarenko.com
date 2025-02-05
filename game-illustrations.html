@@ -33,6 +33,72 @@
       document.oncontextmenu = mischandler;
       document.onmousedown = mousehandler;
       document.onmouseup = mousehandler;
+
+
+      // модальне вікно\\
+      var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+}
+
+// Закриття модального вікна при натисканні на область поза зображенням
+fullImgBox.onclick = function (event) {
+    if (event.target === fullImgBox) {
+        closeFullImg();
+    }
+}
+
+function closeFullImg() {
+    fullImgBox.style.display = "none";
+}
+
+function openFullImg(src) {
+    // Створення модального вікна
+    var modal = document.createElement("div");
+    modal.style.position = "fixed"; // Зафіксувати на екрані
+    modal.style.top = "0";
+    modal.style.left = "0";
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    modal.style.display = "flex";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modal.style.cursor = "pointer";
+    modal.style.zIndex = "1000"; // Ставимо вищий індекс, щоб воно було зверху
+
+    // Створення контейнера для зображення
+    var modalContent = document.createElement("div");
+    modalContent.style.maxHeight = "90%";
+    modalContent.style.maxWidth = "90%";
+    modalContent.style.overflowY = "auto"; // Дозволяє вертикальну прокрутку
+    
+    // Створення елемента зображення
+    var fullImg = document.createElement("img");
+    fullImg.src = src;
+    fullImg.alt = "Full-size Image";
+    fullImg.style.maxWidth = "100%";
+    fullImg.style.maxHeight = "100%";
+    
+    // Додавання зображення до контейнера
+    modalContent.appendChild(fullImg);
+    
+    // Додавання контейнера до модального вікна
+    modal.appendChild(modalContent);
+    
+    // Додавання модального вікна до body
+    document.body.appendChild(modal);
+
+    // Закриття модального вікна при кліку
+    modal.onclick = function() {
+        document.body.removeChild(modal);
+    };
+}
+
+
       </script>
 </head>
 <body>
@@ -122,10 +188,52 @@
 
 
 
+  <div class="gallery">
+    <!-- <h2 class="feedback-text">PORTFOLIO</h2> -->
+    <div class="categories">
+        <div class="category">
+            <a href="I Illustration.html">
+                <img src="Tomato, Crab, Carrot Daria Ponomarenko Cover Image.png" 
+                alt="">
+                
+            </a>
+            <!-- <h3 class="feedback-text">PRACTICING THE CASUAL STYLE</h3> -->
+        </div>
+        <div class="category">
+            <a href="II Illustration.html">
+                <img src="Mug, Hatchet, Scroll Daria Ponomarenko Cover Image.png" alt="Book Illustration 1">
+            </a>
+            <!-- <h3 class="feedback-text">FANTASY PROPS</h3> -->
+        </div>
+        <div class="category">
+            <a href="III Illustration.html">
+                <img src="Bench Casual Style Daria Ponoamrenko Cover Image.png" alt="Character Design 1">
+            </a>
+            <!-- <h3 class="feedback-text">КУРС 1</h3> -->
+        </div>
+        <div class="category">
+          <a href="IV Illustration.html">
+              <img src="Chair Casual Art Style Cover Image.png" alt="Character Design 1">
+          </a>
+          <!-- <h3 class="feedback-text">КУРС 2</h3> -->
+        </div>
 
+        <div class="category">
+          <a href="V Illustration.html">
+              <img src="Isometric Flower Vase Daria Ponomarenko Cover Image.png" alt="Character Design 1">
+          </a>
+          <!-- <h3 class="feedback-text">КУРС 3</h3> -->
+        </div>
 
-
-
+        <div class="category">
+          <a href="VI Illustration.html">
+              <img src="Isometric Dog Statue Daria Ponomarenko Cover Image.png" alt="Character Design 1">
+          </a>
+          <!-- <h3 class="feedback-text">КУРС 4</h3> -->
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -142,27 +250,20 @@
 <div class="container">
   <!-- Стрілка для повернення -->
   <a href="index.html" class="back-button">
-      ←
+    ←
   </a>
-<div class="image-gallery">
-       
-        <img src="game illustrations/Crab Cermoit watermark.png" onclick="openFullImg(this.src)">
-        
-        <img src="game illustrations/icon dark grey watermark low.png"onclick="openFullImg(this.src)">
-        <img src="game illustrations/low 2.png" onclick="openFullImg(this.src)">
-        <img src="game illustrations/tomato watermARK.png " onclick="openFullImg(this.src)">
-        <img src="game illustrations/морква low.png" onclick="openFullImg(this.src)">
-        <img src=" game illustrations/6 This photo is Copyright © 2024 daria-ponomarenko. All rights reserved..png" onclick="openFullImg(this.src)">
-       
-        
-        
-       
 
-        
-    </div>
 
-    
-    </div>
+
+<!-- <div class="image-gallery">
+        <img src="game illustrations/Tomato, Crab, Carrot Daria Ponomarenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Mug, Hatchet, Scroll Daria Ponomarenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Isometric Flower Vase Daria Ponomarenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Isometric Dog Statue Daria Ponomarenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Bench Casual Style Daria Ponoamrenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Chair Casual Art Style.png" onclick="openFullImg(this.src)">
+</div>
+</div> -->
  <!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ -->
 
 
@@ -206,30 +307,6 @@
 
 
 
-<script>
-  var fullImgBox = document.getElementById("fullImgBox");
-var fullImg = document.getElementById("fullImg");
-
-function openFullImg(pic) {
-    fullImgBox.style.display = "flex";
-    fullImg.src = pic;
-}
-
-// Закриття модального вікна при натисканні на область поза зображенням
-fullImgBox.onclick = function (event) {
-    if (event.target === fullImgBox) {
-        closeFullImg();
-    }
-}
-
-function closeFullImg() {
-    fullImgBox.style.display = "none";
-}
-
-  
-
-
-</script>
 
 
   
