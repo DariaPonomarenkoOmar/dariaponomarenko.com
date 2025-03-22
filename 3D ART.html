@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daria Ponomarenko</title>
+
+<!-- moncerat thin -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" href="objects/Favicon icon.png">
+
+<!-- Favicon -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/ctyles.css">
+    <script>
+      var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+      if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+      function mischandler(){
+      return false;
+      }
+      function mousehandler(e){
+      var myevent = (isNS) ? e : event;
+      var eventbutton = (isNS) ? myevent.which : myevent.button;
+      if((eventbutton==2)||(eventbutton==3)) return false;
+      }
+      document.oncontextmenu = mischandler;
+      document.onmousedown = mousehandler;
+      document.onmouseup = mousehandler;
+
+
+      // модальне вікно\\
+      var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+}
+
+// Закриття модального вікна при натисканні на область поза зображенням
+fullImgBox.onclick = function (event) {
+    if (event.target === fullImgBox) {
+        closeFullImg();
+    }
+}
+
+function closeFullImg() {
+    fullImgBox.style.display = "none";
+}
+
+function openFullImg(src) {
+    // Створення модального вікна
+    var modal = document.createElement("div");
+    modal.style.position = "fixed"; // Зафіксувати на екрані
+    modal.style.top = "0";
+    modal.style.left = "0";
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    modal.style.display = "flex";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modal.style.cursor = "pointer";
+    modal.style.zIndex = "1000"; // Ставимо вищий індекс, щоб воно було зверху
+
+    // Створення контейнера для зображення
+    var modalContent = document.createElement("div");
+    modalContent.style.maxHeight = "90%";
+    modalContent.style.maxWidth = "90%";
+    modalContent.style.overflowY = "auto"; // Дозволяє вертикальну прокрутку
+    
+    // Створення елемента зображення
+    var fullImg = document.createElement("img");
+    fullImg.src = src;
+    fullImg.alt = "Full-size Image";
+    fullImg.style.maxWidth = "100%";
+    fullImg.style.maxHeight = "100%";
+    
+    // Додавання зображення до контейнера
+    modalContent.appendChild(fullImg);
+    
+    // Додавання контейнера до модального вікна
+    modal.appendChild(modalContent);
+    
+    // Додавання модального вікна до body
+    document.body.appendChild(modal);
+
+    // Закриття модального вікна при кліку
+    modal.onclick = function() {
+        document.body.removeChild(modal);
+    };
+}
+
+
+      </script>
+</head>
+<body>
+
+ 
+
+<header class="header-right-aligned">
+  <div class="container-header">
+<!-- PICTURE LOGO --><!-- PICTURE LOGO --><!-- PICTURE LOGO --><!-- PICTURE LOGO -->
+    <div class="logo">
+      <a href="https://dariaponomarenko.com" class="logo-link-image">
+        <img src="objects/MYNAME.png" class="logo-image" width="500"></a></div>
+<!-- PICTURE LOGO --><!-- PICTURE LOGO --><!-- PICTURE LOGO --><!-- PICTURE LOGO -->
+
+<!-- MENU HEADER LINKS --><!-- MENU HEADER LINKS --><!-- MENU HEADER LINKS -->
+  <div class="menu-social-group">
+    <div class="default-menu">
+      <nav class="menu">
+<!-- LINKS TEXT --><!-- LINKS TEXT --><!-- LINKS TEXT --><!-- LINKS TEXT -->
+        <ul class="menu-list">
+          <li class="links">
+            <a href="index.html" class="style-of-the-links">PORTFOLIO</a>
+            <img src="dot-element.png" class="image-dot">
+          </li>
+          <li class="links">
+            <a href="publishing.html" class="style-of-the-links">PUBLISHING</a>
+            <img src="dot-element.png" class="image-dot">
+          </li>
+          <li class="links">
+            <a href="resume.html" class="style-of-the-links">RESUME</a>
+            <img src="dot-element.png" class="image-dot">
+          </li>
+          <li class="links">
+            <a href="https://www.linkedin.com/in/dariaponomarenko/" target="_blank"class="style-of-the-links">LINKEDIN</a>
+            <img src="dot-element.png" class="image-dot">
+          </li>
+          <li class="links">
+            <a href="https://daria_ponomarenko.artstation.com" target="_blank"class="style-of-the-links">ARTSTATION</a>
+            <img src="dot-element.png" class="image-dot">
+          </li>
+          <li class="links">
+            <a href="https://www.behance.net/Daria_Ponomarenko" target="_blank"class="my-projects-item-link-COPY">BEHANCE</a>
+            <img src="dot-element.png" class="image-dot">
+          </li>
+        
+          <li class="links">
+            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=ponomarenko.daria2020@gmail.com" target="_blank"class="my-projects-item-link">PONOMARENKO.DARIA2020@GMAIL.COM</a>
+            <img src="dot-element.png" class="image-dot">
+          </li>
+          
+          
+          
+          
+          
+        </ul>
+<!-- LINKS TEXT --><!-- LINKS TEXT --><!-- LINKS TEXT --><!-- LINKS TEXT -->
+      </nav>
+    </div>
+  </div>
+  </div>
+</header>
+<!-- MENU HEADER LINKS --><!-- MENU HEADER LINKS --><!-- MENU HEADER LINKS -->
+<!-- imagegallery --><!-- imagegallery --><!-- imagegallery --><!-- imagegallery -->
+<div class="full-image" id="fullImgBox">
+    <img src="img/image2.jpg" id="fullImg">
+    <span onclick="closeFullImg()"><h6 class="cancel-button">X</h6></span>
+    <span onclick="closeFullImg()"></span>
+  </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="gallery">
+    <!-- <h2 class="feedback-text">PORTFOLIO</h2> -->
+    <div class="categories">
+        <div class="category">
+            <a href="3D - I ARTWORK.html">
+                <img src="3D ART The old mill Cover.png" 
+                alt="">
+                
+            </a>
+            <!-- <h3 class="feedback-text">PRACTICING THE CASUAL STYLE</h3> -->
+        </div>
+        <div class="category">
+            <a href="3D - II ARTWORK.html">
+                <img src="3D ART Snowy House Cover.png" alt="Book Illustration 1">
+            </a>
+            <!-- <h3 class="feedback-text">FANTASY PROPS</h3> -->
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ -->
+<div class="container">
+  <!-- Стрілка для повернення -->
+  <a href="index.html" class="back-button">
+    ←
+  </a>
+
+
+
+<!-- <div class="image-gallery">
+        <img src="game illustrations/Tomato, Crab, Carrot Daria Ponomarenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Mug, Hatchet, Scroll Daria Ponomarenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Isometric Flower Vase Daria Ponomarenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Isometric Dog Statue Daria Ponomarenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Bench Casual Style Daria Ponoamrenko.png" onclick="openFullImg(this.src)">
+        <img src="game illustrations/Chair Casual Art Style.png" onclick="openFullImg(this.src)">
+</div>
+</div> -->
+ <!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ --><!-- ГАЛЕРЕЯ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+        
+    
+  
+        
+    
+
+
+
+
+
+<footer>
+  <div class="footer-logo">
+    <img src="objects/Footer-icon.png" alt="logotype" class="logo-icon">
+    
+    
+  
+  </div>
+
+  <nav class="footer-nav">
+    <a href="index.html" class="style-of-the-links">PORTFOLIO</a>
+    <a href="publishing.html" class="style-of-the-links">PUBLISHING</a>
+    <a href="resume.html" class="style-of-the-links">RESUME</a>
+    <a href="https://www.linkedin.com/in/dariaponomarenko/" target="_blank"class="style-of-the-links">LINKEDIN</a>
+    <a href="https://daria_ponomarenko.artstation.com" target="_blank"class="style-of-the-links">ARTSTATION</a>
+    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=ponomarenko.daria2020@gmail.com" target="_blank"class="my-projects-item-link">PONOMARENKO.DARIA2020@GMAIL.COM</a>
+  </nav>
+  <p class="copyright">Copyright © 2024 Daria Ponomarenko. All rights reserved. All images on this website are the intellectual property of Daria Ponomarenko. Copying, use, or distribution of these images for any purpose is prohibited without the author’s written permission.
+  </p>
+</footer>
+
+
+        
+
+
+</body>
+
+</html>
